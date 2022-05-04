@@ -7,7 +7,9 @@ $('.nav-burger').addEventListener("click", closeOpFunc); */
 
 
 document.querySelectorAll('.btn-nav, .nav-burger').forEach(e => {
-    e.target.addEventListener("click", () => {
-        $('nav-burger')[0].classList.toggle('toggle');
+    e.addEventListener("click", () => {
+        document.querySelector('.nav-burger').classList.toggle('toggle');
     });
 });
+
+
